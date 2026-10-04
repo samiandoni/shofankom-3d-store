@@ -6,7 +6,8 @@ Interactive, measured 3D walkthrough of the Shofankom store.
 
 ## Explore
 
-- Drag to look around and use Forward / Back to move along the aisle.
+- On mobile, use the left thumb joystick to walk and drag the view with your other thumb to look around. Release the joystick to stop.
+- On desktop, drag to look around and use arrow keys, WASD, or Forward / Back to move along the aisle.
 - Scroll or use the zoom buttons to zoom.
 - Select a photo section and inspect it up close.
 - Switch to overview or plan to see the layout.
