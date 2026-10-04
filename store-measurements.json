@@ -1,0 +1,23 @@
+{
+  "units": "cm",
+  "shell": {"frontWidth":350,"rearWidth":315,"length":850,"height":300,"doorWidth":100,"taper":"evenly split between side walls, assumed"},
+  "rightMainShelves":{"width":258,"bayCount":3,"approxBayOutsideWidth":87,"uprightWidth":2,"height":193,"cabinetTop":60,"depth":40,"boardThickness":3.5,"clearLevelHeight":29.75,"startFromEntrance":327,"position":"inferred from measured column"},
+  "rightRearShelves":{"width":180,"bayCount":2,"height":193,"cabinetTop":60,"depth":40,"startFromEntrance":649},
+  "leftMainShelves":{"width":305,"bayCount":3,"height":193,"cabinetTop":60,"depth":40,"slopedBoardCount":3,"slopedBoardDepth":30,"frontDrop":10,"startFromEntrance":212,"position":"inferred from measured column"},
+  "pantry":{"width":63,"height":200,"depth":30,"clearShelfHeight":20,"startFromEntrance":517},
+  "columnRight":{"widthAlongWall":64,"projection":40,"startFromEntrance":585},
+  "columnLeft":{"widthAlongWall":54,"projection":50,"startFromEntrance":580},
+  "chocolateRack":{"width":50,"height":132,"bottomDepth":20,"topDepth":15},
+  "entranceRack":{"width":50,"height":132,"bottomDepth":20,"topDepth":15},
+  "wireRacks":{"count":2,"eachWidth":70,"height":150,"depth":40,"startFromEntrance":634},
+  "rearDrinksFridge":{"width":132,"height":207,"depth":60},
+  "rearFreezer":{"width":66,"height":200,"depth":60},
+  "staffPassage":{"clearWidth":56},
+  "entranceDrinksFridge":{"width":58,"height":182,"depth":50},
+  "whiteDisplay":{"width":42,"height":110,"depth":38,"baseAboveFloor":90},
+  "displayStand":{"width":120,"height":90,"depth":45},
+  "counter":{"length":240,"height":90,"depth":47,"startFromEntrance":36,"offsetFromRightWall":"inferred from photos"},
+  "candyDisplay":{"width":85,"height":190,"depth":40,"lowestShelf":60,"startFromEntrance":242,"position":"inferred; partly alongside the counter"},
+  "tables":"removed by user request",
+  "photoSections":"one image per full vertical bay; cabinet geometry kept separate"
+}
