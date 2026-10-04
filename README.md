@@ -11,6 +11,7 @@ Interactive, measured 3D walkthrough of the Shofankom store.
 - Scroll or use the zoom buttons to zoom.
 - Select a photo section and inspect it up close.
 - Switch to overview or plan to see the layout.
+- Use Full screen to enlarge the walkthrough; select Exit full screen to return. Browsers without fullscreen support expand the viewer within the browser window.
 
 The walkthrough supports desktop and mobile browsers with WebGL. An internet connection is required for the pinned Three.js library and viewer resources.
 
