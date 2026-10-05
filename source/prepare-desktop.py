@@ -21,7 +21,7 @@ for url, name in resources.items():
 page = page.replace("script-src 'unsafe-inline'", "script-src 'self' 'unsafe-inline'")
 page = page.replace('<title>Store Measured</title>', '<title>Shofankom 3D Store</title>')
 page = page.replace('__CODEX_VISUALIZATION_WIDGET_STATE__', '{}')
-start = page.index('const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera')
+start = page.index('let renderer;')
 end = page.index("renderer.domElement.style.display='block';", start) + len("renderer.domElement.style.display='block';")
 page = page[:start] + (root / 'source/renderer-compat.js').read_text(encoding='utf-8') + page[end:]
 (root / 'index.html').write_text(page, encoding='utf-8')
