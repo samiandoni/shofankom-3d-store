@@ -1597,7 +1597,8 @@ function box(w,h,d,x,y,z,mat,parent=scene){const m=new THREE.Mesh(new THREE.BoxG
 const rearDoorDistance=8.5,rearColdDepth=.60,storeLength=rearDoorDistance+rearColdDepth;
 function halfWidth(s){return 1.75-.175*s/storeLength;}
 const shape=new THREE.Shape();shape.moveTo(-1.75,0);shape.lineTo(1.75,0);shape.lineTo(1.575,storeLength);shape.lineTo(-1.575,storeLength);shape.closePath();const floor=new THREE.Mesh(new THREE.ShapeGeometry(shape),floorMat);floor.rotation.x=-Math.PI/2;floor.receiveShadow=true;scene.add(floor);
-const wallPaint=new THREE.MeshBasicMaterial({color:0xffffff,toneMapped:false});
+// Warm off-white sampled from the exposed wall in the applied shelf reference photo.
+const wallPaint=new THREE.MeshBasicMaterial({color:0xe2dfd6,toneMapped:false});
 const wallGroup=new THREE.Group();scene.add(wallGroup);for(const side of [-1,1]){const m=box(.08,3,storeLength,side*1.6625,1.5,-storeLength/2,wallPaint,wallGroup);m.rotation.y=side*Math.atan(.175/storeLength);}box(2.175,3,.08,-.4875,1.5,-(storeLength+.04),wallPaint,wallGroup);box(.415,3,.08,1.3675,1.5,-(storeLength+.04),wallPaint,wallGroup);box(.56,.85,.08,.88,2.575,-(storeLength+.04),wallPaint,wallGroup);
 for(const x of [-1.125,1.125])box(1.25,2.65,.025,x,1.325,0,glass);box(1,2.4,.025,0,1.2,0,glass);for(const x of [-1.75,-.5,.5,1.75])box(.025,2.65,.035,x,1.325,0,black);box(3.5,.035,.035,0,2.65,0,black);box(.022,.3,.05,.39,1.14,-.045,black);
 const joints=[];for(let x=-1.5;x<=1.5;x+=.24)joints.push(x,.002,0,x,.002,-storeLength);for(let s=.6;s<storeLength;s+=1.2){const w=halfWidth(s);joints.push(-w,.002,-s,w,.002,-s);}const floorGeo=new THREE.BufferGeometry();floorGeo.setAttribute('position',new THREE.Float32BufferAttribute(joints,3));scene.add(new THREE.LineSegments(floorGeo,new THREE.LineBasicMaterial({color:0x9a9589,transparent:true,opacity:.34})));
