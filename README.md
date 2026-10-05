@@ -26,6 +26,8 @@ The walkthrough supports desktop and mobile browsers with WebGL. Viewer librarie
 
 The center tables are omitted. The entrance orientation, shelf heights, cabinet bases, columns, racks, and fridges follow the supplied photos and measurements. Some small gaps and placement offsets remain inferred. Image uploads and shared admin publishing are not implemented yet.
 
+The entrance glass is 8.5 m from the rear fridge/freezer door fronts. Their 60 cm depth extends beyond that distance, so the modeled shell is 9.1 m long. Other fixture distances from the entrance stay as measured.
+
 ## Run locally
 
 Open `index.html` in a browser, or serve this folder:
