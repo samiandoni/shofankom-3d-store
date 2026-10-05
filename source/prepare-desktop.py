@@ -19,6 +19,8 @@ for url, name in resources.items():
             target.write_bytes(response.read())
     page = page.replace(url, 'vendor/' + name)
 page = page.replace("script-src 'unsafe-inline'", "script-src 'self' 'unsafe-inline'")
+page = page.replace("img-src blob:", "img-src 'self' blob:")
+page = page.replace('../assets/', 'assets/')
 page = page.replace('<title>Store Measured</title>', '<title>Shofankom 3D Store</title>')
 page = page.replace('__CODEX_VISUALIZATION_WIDGET_STATE__', '{}')
 start = page.index('let renderer;')
